@@ -19,7 +19,7 @@ the full portfolio.
 [Python]{.badge} [LightGBM]{.badge} [Survival Analysis]{.badge} [Monte Carlo]{.badge}
 
 ::: {.project-links}
-[Code](https://github.com/ghoshtania/credit-risk-modeling) · [Write-up](credit-risk.qmd)
+[Write-up](credit-risk.qmd)
 :::
 :::
 

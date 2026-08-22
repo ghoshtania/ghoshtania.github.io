@@ -11,7 +11,7 @@ about:
       href: mailto:ghoshtania96@gmail.com
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/YOUR-HANDLE
+      href: https://www.linkedin.com/in/ghoshtania96/
     - icon: github
       text: GitHub
       href: https://github.com/ghoshtania

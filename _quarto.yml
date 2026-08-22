@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - background.jpg
 
 website:
   title: "Tania Ghosh"
@@ -22,7 +24,7 @@ website:
         href: https://github.com/ghoshtania
         aria-label: GitHub
       - icon: linkedin
-        href: https://linkedin.com/in/YOUR-HANDLE
+        href: https://www.linkedin.com/in/ghoshtania96/
         aria-label: LinkedIn
       - icon: envelope
         href: mailto:ghoshtania96@gmail.com
@@ -33,7 +35,7 @@ website:
       - icon: github
         href: https://github.com/ghoshtania
       - icon: linkedin
-        href: https://linkedin.com/in/YOUR-HANDLE
+        href: https://www.linkedin.com/in/ghoshtania96/
       - icon: envelope
         href: mailto:ghoshtania96@gmail.com
     border: false
