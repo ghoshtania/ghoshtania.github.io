@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My academic research centered on finding structure in large, noisy systems — community detection in complex networks, extreme value statistics, and synchronization in nonlinear dynamical systems. The methods below — particularly extreme value theory and uncertainty quantification — carry directly over into the tail-risk and model-validation problems in quantitative finance."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\n\n2026 — Resolution Limit in Hierarchical Community Detection in Bipartite Networks (preprint) arXiv:2604.08793\n\n\n2025 — Extreme Value Statistics of Community Detection in Complex Networks, Entropy\n\n\n2025 — Experimental Verification of Generalized Synchronization, Physics Letters A"
+  },
+  {
+    "objectID": "research.html#software",
+    "href": "research.html#software",
+    "title": "Research",
+    "section": "Software",
+    "text": "Software\n\n2026 — RenEEL — algorithm for bipartite community detection Zenodo"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Credit Risk\n\nCredit Risk & Capital Modeling\nEnd-to-end PD/LGD/EAD framework on Lending Club consumer loans, assessed against Basel III IRB, IFRS 9, and SR 11-7 expectations. Benchmarks WOE/IV scorecards against LightGBM and a Merton structural model, then runs Gaussian copula Monte Carlo for expected loss and regulatory capital across the full portfolio.\nPython LightGBM Survival Analysis Monte Carlo\n\nWrite-up\n\n\n\n\nEquity Research\n\nAlternative Data Equity Signals\nMulti-factor alpha research combining SEC EDGAR filing sentiment (Loughran-McDonald), Google Trends attention data, and options market positioning. Signals evaluated with Fama-MacBeth regressions, information coefficient analysis, and long-short decile backtests.\nPython NLP Factor Research Backtesting\n\nWrite-up"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tania Ghosh",
+    "section": "",
+    "text": "I build and validate quantitative models for credit risk and systematic equity research. My work covers PD/LGD/EAD frameworks and Basel III capital, derivatives pricing under stochastic volatility, and NLP-driven signals built from unstructured financial text.\nI hold a PhD in Computational Statistical Physics from the University of Houston, where I developed algorithms for finding structure in large, noisy, high-dimensional systems and built uncertainty quantification methods using extreme value theory. The same problems recur in finance: estimating things from data that is messy, non-stationary, and short on ground truth.\nI am currently looking for quantitative research, model validation, and model risk roles.\nPython R SQL LightGBM Monte Carlo Survival Analysis NLP Stochastic Calculus Basel III / IFRS 9 Extreme Value Theory"
+  },
+  {
+    "objectID": "index.html#core-competencies",
+    "href": "index.html#core-competencies",
+    "title": "Tania Ghosh",
+    "section": "Core Competencies",
+    "text": "Core Competencies\n\n\nCredit Risk & Capital\nPD/LGD/EAD scorecards, IFRS 9 staging, and Basel III IRB capital calculations validated against SR 11-7 model risk expectations.\n\n\nQuantitative Research\nDerivatives pricing under stochastic volatility, multi-factor alpha research, and rigorous backtesting frameworks.\n\n\nStatistical Modeling\nExtreme value theory, uncertainty quantification, and inference on large, noisy, high-dimensional systems.\n\n\nApplied Programming\nPython-first modeling stack — LightGBM, survival analysis, Monte Carlo simulation, and NLP pipelines on unstructured financial text."
+  },
+  {
+    "objectID": "index.html#recent",
+    "href": "index.html#recent",
+    "title": "Tania Ghosh",
+    "section": "Recent",
+    "text": "Recent\n\n2026 — Preprint: Resolution Limit in Hierarchical Community Detection in Bipartite Networks (arXiv:2604.08793)\n\n\n2026 — Software release: RenEEL algorithm for bipartite community detection (Zenodo)\n\n\n2025 — Extreme Value Statistics of Community Detection in Complex Networks, Entropy\n\n\n2025 — Experimental Verification of Generalized Synchronization, Physics Letters A"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -28,59 +77,10 @@
     "text": "Write-up in progress."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Credit Risk\n\nCredit Risk & Capital Modeling\nEnd-to-end PD/LGD/EAD framework on Lending Club consumer loans, assessed against Basel III IRB, IFRS 9, and SR 11-7 expectations. Benchmarks WOE/IV scorecards against LightGBM and a Merton structural model, then runs Gaussian copula Monte Carlo for expected loss and regulatory capital across the full portfolio.\nPython LightGBM Survival Analysis Monte Carlo\n\nWrite-up\n\n\n\n\nEquity Research\n\nAlternative Data Equity Signals\nMulti-factor alpha research combining SEC EDGAR filing sentiment (Loughran-McDonald), Google Trends attention data, and options market positioning. Signals evaluated with Fama-MacBeth regressions, information coefficient analysis, and long-short decile backtests.\nPython NLP Factor Research Backtesting\n\nWrite-up"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "My academic research centered on finding structure in large, noisy systems — community detection in complex networks, extreme value statistics, and synchronization in nonlinear dynamical systems. The methods below — particularly extreme value theory and uncertainty quantification — carry directly over into the tail-risk and model-validation problems in quantitative finance."
-  },
-  {
-    "objectID": "research.html#publications",
-    "href": "research.html#publications",
-    "title": "Research",
-    "section": "Publications",
-    "text": "Publications\n\n2026 — Resolution Limit in Hierarchical Community Detection in Bipartite Networks (preprint) arXiv:2604.08793\n\n\n2025 — Extreme Value Statistics of Community Detection in Complex Networks, Entropy\n\n\n2025 — Experimental Verification of Generalized Synchronization, Physics Letters A"
-  },
-  {
-    "objectID": "research.html#software",
-    "href": "research.html#software",
-    "title": "Research",
-    "section": "Software",
-    "text": "Software\n\n2026 — RenEEL — algorithm for bipartite community detection Zenodo"
-  },
-  {
     "objectID": "projects/credit-risk.html",
     "href": "projects/credit-risk.html",
     "title": "Credit Risk & Capital Modeling",
     "section": "",
     "text": "Write-up in progress."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Tania Ghosh",
-    "section": "",
-    "text": "I build and validate quantitative models for credit risk and systematic equity research. My work covers PD/LGD/EAD frameworks and Basel III capital, derivatives pricing under stochastic volatility, and NLP-driven signals built from unstructured financial text.\nI hold a PhD in Computational Statistical Physics from the University of Houston, where I developed algorithms for finding structure in large, noisy, high-dimensional systems and built uncertainty quantification methods using extreme value theory. The same problems recur in finance: estimating things from data that is messy, non-stationary, and short on ground truth.\nI am currently looking for quantitative research, model validation, and model risk roles.\nPython R SQL LightGBM Monte Carlo Survival Analysis NLP Stochastic Calculus Basel III / IFRS 9 Extreme Value Theory"
-  },
-  {
-    "objectID": "index.html#core-competencies",
-    "href": "index.html#core-competencies",
-    "title": "Tania Ghosh",
-    "section": "Core Competencies",
-    "text": "Core Competencies\n\n\nCredit Risk & Capital\nPD/LGD/EAD scorecards, IFRS 9 staging, and Basel III IRB capital calculations validated against SR 11-7 model risk expectations.\n\n\nQuantitative Research\nDerivatives pricing under stochastic volatility, multi-factor alpha research, and rigorous backtesting frameworks.\n\n\nStatistical Modeling\nExtreme value theory, uncertainty quantification, and inference on large, noisy, high-dimensional systems.\n\n\nApplied Programming\nPython-first modeling stack — LightGBM, survival analysis, Monte Carlo simulation, and NLP pipelines on unstructured financial text."
-  },
-  {
-    "objectID": "index.html#recent",
-    "href": "index.html#recent",
-    "title": "Tania Ghosh",
-    "section": "Recent",
-    "text": "Recent\n\n2026 — Preprint: Resolution Limit in Hierarchical Community Detection in Bipartite Networks (arXiv:2604.08793)\n\n\n2026 — Software release: RenEEL algorithm for bipartite community detection (Zenodo)\n\n\n2025 — Extreme Value Statistics of Community Detection in Complex Networks, Entropy\n\n\n2025 — Experimental Verification of Generalized Synchronization, Physics Letters A"
   }
 ]
