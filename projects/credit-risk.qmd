@@ -1,0 +1,8 @@
+---
+title: "Credit Risk & Capital Modeling"
+subtitle: "PD/LGD/EAD → Basel III capital on 1.35M consumer loans"
+code-fold: true
+code-summary: "Show code"
+---
+
+*Write-up in progress.*

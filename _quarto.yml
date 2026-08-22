@@ -5,8 +5,10 @@ project:
 website:
   title: "Tania Ghosh"
   description: "Quantitative Research & Risk Modeling"
+  favicon: favicon.svg
+  site-url: "https://ghoshtania.github.io"
   navbar:
-    right:
+    left:
       - href: index.qmd
         text: Home
       - href: projects/index.qmd
@@ -15,17 +17,39 @@ website:
         text: Research
       - href: about.qmd
         text: About
+    right:
+      - icon: github
+        href: https://github.com/ghoshtania
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/YOUR-HANDLE
+        aria-label: LinkedIn
+      - icon: envelope
+        href: mailto:ghoshtania96@gmail.com
+        aria-label: Email
+  page-footer:
+    left: "© 2026 Tania Ghosh"
+    right:
       - icon: github
         href: https://github.com/ghoshtania
       - icon: linkedin
         href: https://linkedin.com/in/YOUR-HANDLE
+      - icon: envelope
+        href: mailto:ghoshtania96@gmail.com
+    border: false
 
 format:
   html:
-    theme: cosmo
+    theme: [darkly, theme.scss]
     css: styles.css
     toc: true
     toc-depth: 3
+    smooth-scroll: true
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 execute:
   freeze: auto

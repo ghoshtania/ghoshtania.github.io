@@ -1,0 +1,43 @@
+---
+title: "Projects"
+subtitle: "Applied work in credit risk, capital modeling, and systematic equity research"
+---
+
+::: {.project-grid}
+
+::: {.project-card}
+[Credit Risk]{.project-tag}
+
+### [Credit Risk & Capital Modeling](credit-risk.qmd)
+
+End-to-end PD/LGD/EAD framework on Lending Club consumer loans, assessed
+against Basel III IRB, IFRS 9, and SR 11-7 expectations. Benchmarks WOE/IV
+scorecards against LightGBM and a Merton structural model, then runs
+Gaussian copula Monte Carlo for expected loss and regulatory capital across
+the full portfolio.
+
+[Python]{.badge} [LightGBM]{.badge} [Survival Analysis]{.badge} [Monte Carlo]{.badge}
+
+::: {.project-links}
+[Code](https://github.com/ghoshtania/credit-risk-modeling) · [Write-up](credit-risk.qmd)
+:::
+:::
+
+::: {.project-card}
+[Equity Research]{.project-tag}
+
+### [Alternative Data Equity Signals](alpha-research.qmd)
+
+Multi-factor alpha research combining SEC EDGAR filing sentiment
+(Loughran-McDonald), Google Trends attention data, and options market
+positioning. Signals evaluated with Fama-MacBeth regressions, information
+coefficient analysis, and long-short decile backtests.
+
+[Python]{.badge} [NLP]{.badge} [Factor Research]{.badge} [Backtesting]{.badge}
+
+::: {.project-links}
+[Write-up](alpha-research.qmd)
+:::
+:::
+
+:::

@@ -1,7 +1,89 @@
 ---
 title: "Tania Ghosh"
+subtitle: "Quantitative Research & Risk Modeling"
+about:
+  template: trestles
+  image: profile.jpg
+  image-shape: rounded
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:ghoshtania96@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/YOUR-HANDLE
+    - icon: github
+      text: GitHub
+      href: https://github.com/ghoshtania
 ---
 
-This is a Quarto website.
+I build and validate quantitative models for credit risk and systematic
+equity research. My work covers PD/LGD/EAD frameworks and Basel III capital,
+derivatives pricing under stochastic volatility, and NLP-driven signals
+built from unstructured financial text.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I hold a PhD in Computational Statistical Physics from the University of
+Houston, where I developed algorithms for finding structure in large, noisy,
+high-dimensional systems and built uncertainty quantification methods using
+extreme value theory. The same problems recur in finance: estimating things
+from data that is messy, non-stationary, and short on ground truth.
+
+I am currently looking for quantitative research, model validation, and
+model risk roles.
+
+[Python]{.badge} [R]{.badge} [SQL]{.badge} [LightGBM]{.badge}
+[Monte Carlo]{.badge} [Survival Analysis]{.badge} [NLP]{.badge}
+[Stochastic Calculus]{.badge} [Basel III / IFRS 9]{.badge}
+[Extreme Value Theory]{.badge}
+
+## Core Competencies
+
+::: {.competency-grid}
+
+::: {.competency}
+#### Credit Risk & Capital
+PD/LGD/EAD scorecards, IFRS 9 staging, and Basel III IRB capital
+calculations validated against SR 11-7 model risk expectations.
+:::
+
+::: {.competency}
+#### Quantitative Research
+Derivatives pricing under stochastic volatility, multi-factor alpha
+research, and rigorous backtesting frameworks.
+:::
+
+::: {.competency}
+#### Statistical Modeling
+Extreme value theory, uncertainty quantification, and inference on
+large, noisy, high-dimensional systems.
+:::
+
+::: {.competency}
+#### Applied Programming
+Python-first modeling stack — LightGBM, survival analysis, Monte Carlo
+simulation, and NLP pipelines on unstructured financial text.
+:::
+
+:::
+
+## Recent
+
+::: {.timeline-item}
+[2026]{.year} — Preprint: *Resolution Limit in Hierarchical Community
+Detection in Bipartite Networks* ([arXiv:2604.08793](https://arxiv.org/abs/2604.08793))
+:::
+
+::: {.timeline-item}
+[2026]{.year} — Software release: RenEEL algorithm for bipartite community
+detection ([Zenodo](https://doi.org/10.5281/zenodo.19615030))
+:::
+
+::: {.timeline-item}
+[2025]{.year} — *Extreme Value Statistics of Community Detection in Complex
+Networks*, **Entropy**
+:::
+
+::: {.timeline-item}
+[2025]{.year} — *Experimental Verification of Generalized Synchronization*,
+**Physics Letters A**
+:::

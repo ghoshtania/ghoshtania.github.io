@@ -1,0 +1,8 @@
+---
+title: "Alternative Data Equity Signals"
+subtitle: "Filing sentiment, attention data, and options positioning as multi-factor alpha signals"
+code-fold: true
+code-summary: "Show code"
+---
+
+*Write-up in progress.*

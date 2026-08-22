@@ -1,0 +1,37 @@
+---
+title: "Research"
+subtitle: "Publications and software from my work in statistical physics and network science"
+toc: false
+---
+
+My academic research centered on finding structure in large, noisy systems —
+community detection in complex networks, extreme value statistics, and
+synchronization in nonlinear dynamical systems. The methods below —
+particularly extreme value theory and uncertainty quantification — carry
+directly over into the tail-risk and model-validation problems in
+quantitative finance.
+
+## Publications
+
+::: {.timeline-item}
+[2026]{.year} — **Resolution Limit in Hierarchical Community Detection in
+Bipartite Networks** *(preprint)*
+[arXiv:2604.08793](https://arxiv.org/abs/2604.08793)
+:::
+
+::: {.timeline-item}
+[2025]{.year} — **Extreme Value Statistics of Community Detection in Complex
+Networks**, *Entropy*
+:::
+
+::: {.timeline-item}
+[2025]{.year} — **Experimental Verification of Generalized Synchronization**,
+*Physics Letters A*
+:::
+
+## Software
+
+::: {.timeline-item}
+[2026]{.year} — **RenEEL** — algorithm for bipartite community detection
+[Zenodo](https://doi.org/10.5281/zenodo.19615030)
+:::

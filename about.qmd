@@ -1,5 +1,59 @@
 ---
 title: "About"
+subtitle: "From statistical physics to financial risk"
+toc: false
 ---
 
-About this site
+::: {.about-flex}
+
+::: {.about-flex-main}
+My background is in statistical physics: finding structure in systems that
+are large, noisy, and only partially observable. During my PhD I worked on
+community detection in complex networks, extreme value statistics, and
+synchronization in nonlinear dynamical systems — problems where the honest
+answer is a distribution, not a point estimate, and where getting the
+uncertainty right matters as much as getting the estimate right.
+
+That same discipline is what draws me to quantitative finance. Credit risk,
+derivatives pricing, and factor research all come down to the same core
+problem: build a model that is precise enough to be useful, honest about
+what it doesn't know, and robust when the data stops behaving the way your
+assumptions assumed it would.
+:::
+
+::: {.quick-facts}
+#### Quick facts
+
+**Focus**\
+Credit risk · Model validation · Quant research
+
+**Education**\
+PhD, Computational Statistical Physics
+
+**Stack**\
+Python · R · SQL
+
+**Looking for**\
+Quant research, model validation, and model risk roles
+:::
+
+:::
+
+## Education
+
+::: {.timeline-item}
+[PhD]{.year} — Computational Statistical Physics, University of Houston
+:::
+
+## How I work
+
+I like problems that sit at the boundary between rigorous theory and messy
+real-world data — extreme value theory applied to tail risk, uncertainty
+quantification applied to model validation, network methods applied to
+systemic risk. I write my own tooling rather than treating models as black
+boxes, because being able to explain *why* a model says what it says is
+usually the difference between a model that survives model risk review and
+one that doesn't.
+
+I'm currently looking for roles in quantitative research, model validation,
+and model risk — credit risk, market risk, or systematic equity research.

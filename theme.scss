@@ -1,0 +1,437 @@
+/*-- scss:defaults --*/
+
+$body-bg:           #0a0f1c;
+$body-color:        #eef1f7;
+$link-color:        #d7a53a;
+$link-decoration:   none;
+$link-hover-color:  #eabf5f;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$headings-font-family:   "Space Grotesk", "Inter", sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+$headings-color:    #f6f8fc;
+$headings-font-weight: 600;
+
+$code-color:        #eabf5f;
+$code-bg:           #101a2c;
+
+$navbar-bg:         rgba(10, 15, 28, 0.72);
+$navbar-fg:         #eef1f7;
+
+$border-color:      rgba(255, 255, 255, 0.09);
+
+$toc-color:         #d7a53a;
+$toc-active-border: #d7a53a;
+
+// Use much more of the viewport instead of a narrow centered column
+$grid-body-width:    1280px;
+$grid-sidebar-width: 260px;
+$grid-margin-width:  280px;
+
+/*-- scss:rules --*/
+
+:root {
+  --bg: #0a0f1c;
+  --surface: rgba(19, 28, 48, 0.6);
+  --surface-2: rgba(26, 37, 62, 0.65);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --text: #eef1f7;
+  --text-muted: #93a0b8;
+  --accent: #d7a53a;
+  --accent-soft: rgba(215, 165, 58, 0.12);
+  --glass-blur: blur(20px) saturate(140%);
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: #fff;
+}
+
+html {
+  background: var(--bg);
+}
+
+/* ---------------- Ambient background ---------------- */
+/* Painted directly as body's own background (not a z-indexed pseudo-element)
+   so it can't get buried behind normal-flow content's stacking layer. */
+body {
+  letter-spacing: 0.1px;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 900px 560px at 12% -6%, rgba(215, 165, 58, 0.22), transparent 60%),
+    radial-gradient(ellipse 1100px 700px at 108% 18%, rgba(56, 142, 197, 0.20), transparent 60%),
+    radial-gradient(ellipse 900px 600px at 25% 115%, rgba(215, 165, 58, 0.12), transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: auto, auto, auto, 44px 44px, 44px 44px;
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.01em;
+}
+
+#title-block-header h1.title,
+h1.title {
+  font-weight: 700;
+}
+
+.subtitle,
+p.subtitle,
+h2.subtitle {
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* section headings get a small accent rule */
+main h2 {
+  position: relative;
+  padding-top: 0.6em;
+  margin-top: 2.2em;
+  font-size: 1.5rem;
+}
+main h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar-nav .nav-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted) !important;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--text) !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.35rem;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.navbar-nav .nav-link i.bi,
+.navbar-nav .nav-link .bi {
+  color: var(--text-muted);
+}
+
+/* ---------------- Footer ---------------- */
+.nav-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.nav-footer a {
+  color: var(--text-muted);
+}
+.nav-footer a:hover {
+  color: var(--accent);
+}
+
+/* ---------------- Readable prose width ---------------- */
+/* Grids, cards, and the about hero use the full wide column;
+   plain paragraphs stay at a comfortable reading measure. */
+#quarto-document-content > p,
+#quarto-document-content > ul,
+#quarto-document-content > ol {
+  max-width: 50rem;
+}
+
+/* ---------------- About: intro + quick facts ---------------- */
+.about-flex {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: none;
+}
+
+.about-flex-main p {
+  max-width: 46rem;
+}
+
+.quick-facts {
+  background: var(--surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.quick-facts h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.quick-facts p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.quick-facts p:last-child {
+  margin-bottom: 0;
+}
+
+.quick-facts strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .about-flex {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- About page (trestles) ---------------- */
+.quarto-about-trestles {
+  padding: 2.5rem 3rem;
+  margin-top: 1.5rem;
+  background: var(--surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.about-entity .about-image {
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 0 0 6px var(--accent-soft);
+}
+
+.about-entity .about-links .about-link {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  color: var(--text) !important;
+  transition: all 0.15s ease;
+  background: var(--surface-2);
+}
+
+.about-entity .about-links .about-link:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+  background: var(--accent-soft);
+}
+
+.about-contents h1.title {
+  font-size: 2.4rem;
+  margin-bottom: 0.15em;
+}
+
+.about-contents main.content > p,
+.about-contents main.content > ul {
+  max-width: 42rem;
+}
+
+/* ---------------- Skill badges ---------------- */
+.badge {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(215, 165, 58, 0.35);
+  border-radius: 5px;
+  padding: 0.18rem 0.55rem;
+  margin: 0 0.35rem 0.35rem 0;
+}
+
+/* ---------------- Competency grid ---------------- */
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.competency {
+  background: var(--surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.competency:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.competency h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.competency p {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ---------------- Timeline / recent list ---------------- */
+.timeline-item {
+  border-left: 2px solid var(--border);
+  padding: 0 0 1.1rem 1.1rem;
+  margin-left: 0.2rem;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0.35rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.timeline-item .year {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+/* ---------------- Project cards ---------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  background: var(--surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .project-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project-card h3 a {
+  color: var(--text);
+}
+.project-card h3 a:hover {
+  color: var(--accent);
+}
+
+.project-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  flex-grow: 1;
+}
+
+.project-card .project-links {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+}
+
+.project-card .project-links a {
+  color: var(--text-muted);
+  margin-right: 1.1rem;
+}
+.project-card .project-links a:hover {
+  color: var(--accent);
+}
+
+/* ---------------- Code blocks ---------------- */
+pre.sourceCode,
+div.sourceCode {
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* ---------------- Tables ---------------- */
+.table {
+  color: var(--text);
+  border-color: var(--border);
+}
