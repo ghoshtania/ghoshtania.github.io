@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Tania Ghosh"
+  description: "Quantitative Research & Risk Modeling"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: research.qmd
+        text: Research
+      - href: about.qmd
+        text: About
+      - icon: github
+        href: https://github.com/ghoshtania
+      - icon: linkedin
+        href: https://linkedin.com/in/YOUR-HANDLE
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+
+execute:
+  freeze: auto
